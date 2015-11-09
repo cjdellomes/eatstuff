@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // This feels dirty
+    meta(http-equiv='refresh', content='15')
+    link(href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', rel='stylesheet', media='screen')
+    link(href='css/app.css' rel='stylesheet')
+    script(src='http://code.jquery.com/jquery.js')
+    script(src='js/bootstrap.min.js')
+  body
+    .navbar.navbar-default.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Doge Cafe
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='/') Home
+            li
+              a(href='/admin') Admin
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/logout') Logout
+
+    .container
+      h1 People in line
+      if queue.user.length != 0
+        a.btn.btn-success(href="/queue-update") Table Ready
+      else
+        h3 nobody is waiting for a table
+
+      .container
+        br
+      for user in queue.user
+        .panel.panel-default
+          .panel-heading
+            h3.panel-title #{user.name}
+          .panel-body
+            p party size: #{user.partySize}
+            p email: #{user.email}
