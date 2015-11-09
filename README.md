@@ -1,3 +1,8 @@
+###Teammates:
+Jake Schmitz (schmittyjd)
+Ryan Kim
+Leaf Cherngchaosil (pcherng01)
+
 Ideas for hack
 ====
 
