@@ -1,10 +1,11 @@
-###Teammates:
-Jake Schmitz (schmittyjd)
-Ryan Kim
-Leaf Cherngchaosil (pcherng01)
+Teammates:
+===
+- Jake Schmitz (schmittyjd)
+- Ryan Kim
+- Leaf Cherngchaosil (pcherng01)
 
 Ideas for hack
-====
+===
 
 ### UX flow:
  1. User goes to local eatery and wants a seat
